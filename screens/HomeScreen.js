@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function HomeScreen({navigation, route}) {
+export default function HomeScreen() {
 
     return (
         <SafeAreaView style={styles.container} edges={['right', 'bottom', 'left']}>
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 420,
-        height: 580,
+        height: 450,
         padding: 10
     },
     text: {
