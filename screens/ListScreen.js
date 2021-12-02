@@ -12,7 +12,7 @@ import {
 
 export default function App() {
   const baseURL = 'https://randomuser.me/api/?format=json&results=40&nat=US,CA,NZ';
-  const [people, setPeople] = useState([]);
+  const [users, setUsers] = useState([]);
 
   const getData = (type) => {
     fetch(baseURL)
@@ -24,7 +24,7 @@ export default function App() {
         let results = data.results.map((item, index) => {
           return { ...item, key: index  };
         });
-        setPeople(results);
+        setUsers(results);
       })
       .catch((err) => {
         console.error(err.message);
@@ -39,8 +39,21 @@ export default function App() {
 
   return (
     <SafeAreaView style={styles.container} >
-      <StatusBar style="auto" />
+      <FlatList
+        data = {users}
+        renderItem = {(item) => <Users users = {item} />}
+      />
     </SafeAreaView>
+  );
+}
+
+function Users({ users }) {
+
+  const { name, key } = users.item;
+  return(
+    <View>
+      <Text>{name.first}</Text>
+    </View>
   );
 }
 
