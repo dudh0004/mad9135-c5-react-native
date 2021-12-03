@@ -52,9 +52,9 @@ function Users({ users }) {
   return(
     <View style = {styles.view}>
       <Text style = {styles.heading}>{name.first} {name.last}</Text>
-      <Text>{email}</Text>
-      <Text>{phone}</Text>
-      <Text>{location.city}</Text>
+      <Text style = {styles.email}>{email}</Text>
+      <Text style = {styles.content}>{phone}</Text>
+      <Text style = {styles.content}>{location.city}</Text>
     </View>
   );
 }
@@ -78,5 +78,13 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: '#2F4F4F',
     fontWeight: '900',
+  },
+  email: {
+    fontSize: 15,
+    color: '#0096FF'
+  },
+  content: {
+    fontSize: 15,
+    color: '#696969',
   }
 });

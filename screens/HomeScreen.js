@@ -27,17 +27,19 @@ const styles = StyleSheet.create({
     },
     image: {
         width: 420,
-        height: 450,
+        height: 500,
         padding: 10
     },
     text: {
         fontSize: 26,
         textAlign: 'center',
+        color: '#2F4F4F',
         padding: 10 
     },
     text2: {
         fontSize: 20,
         textAlign: 'center',
+        color: '#2F4F4F',
         paddingTop: 15
     }
 });
