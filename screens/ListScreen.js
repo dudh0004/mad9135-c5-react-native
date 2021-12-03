@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
@@ -51,7 +50,7 @@ function Users({ users }) {
 
   const { name, email, location, phone, key } = users.item;
   return(
-    <View>
+    <View style = {styles.heading}>
       <Text>{name.first} {name.last}</Text>
       <Text>{email}</Text>
       <Text>{location.city}</Text>
@@ -64,5 +63,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#A9A9A9',
+    justifyContent: 'flex-start',
+    alignItems: 'stretch',
+    paddingVertical: 10,
+    paddingHorizontal: 10
+  },
+  heading: {
+    borderBottomWidth: 1,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingHorizontal: 10,
   },
 });
