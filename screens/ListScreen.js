@@ -50,11 +50,11 @@ function Users({ users }) {
 
   const { name, email, location, phone, key } = users.item;
   return(
-    <View style = {styles.heading}>
-      <Text>{name.first} {name.last}</Text>
+    <View style = {styles.view}>
+      <Text style = {styles.heading}>{name.first} {name.last}</Text>
       <Text>{email}</Text>
-      <Text>{location.city}</Text>
       <Text>{phone}</Text>
+      <Text>{location.city}</Text>
     </View>
   );
 }
@@ -62,16 +62,21 @@ function Users({ users }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#A9A9A9',
+    backgroundColor: '#DCDCDC',
     justifyContent: 'flex-start',
     alignItems: 'stretch',
     paddingVertical: 10,
     paddingHorizontal: 10
   },
-  heading: {
+  view: {
     borderBottomWidth: 1,
     paddingTop: 10,
     paddingBottom: 10,
     paddingHorizontal: 10,
   },
+  heading: {
+    fontSize: 30,
+    color: '#2F4F4F',
+    fontWeight: '900',
+  }
 });
