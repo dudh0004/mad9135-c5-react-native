@@ -49,10 +49,13 @@ export default function App() {
 
 function Users({ users }) {
 
-  const { name, key } = users.item;
+  const { name, email, location, phone, key } = users.item;
   return(
     <View>
-      <Text>{name.first}</Text>
+      <Text>{name.first} {name.last}</Text>
+      <Text>{email}</Text>
+      <Text>{location.city}</Text>
+      <Text>{phone}</Text>
     </View>
   );
 }
