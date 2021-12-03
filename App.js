@@ -28,7 +28,7 @@ export default function App() {
           }
         })}>
           <Tab.Screen name="Home" component = {HomeScreen} />
-          <Tab.Screen name="List" component = {ListScreen} />
+          <Tab.Screen name="List of random users" component = {ListScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     </SafeAreaView>
