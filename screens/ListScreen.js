@@ -77,14 +77,22 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 30,
     color: '#2F4F4F',
-    fontWeight: '900',
+    fontWeight: '600',
+    paddingTop: 5,
+    paddingBottom: 5,
+
   },
   email: {
     fontSize: 15,
-    color: '#0096FF'
+    color: '#0096FF',
+    paddingTop: 5,
+    paddingBottom: 5,
+
   },
   content: {
     fontSize: 15,
     color: '#696969',
+    paddingTop: 5,
+    paddingBottom: 5,
   }
 });

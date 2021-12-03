@@ -24,6 +24,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#DCDCDC',
+        justifyContent: 'flex-start',
+        alignItems: 'stretch',
     },
     image: {
         width: 420,
@@ -34,12 +36,14 @@ const styles = StyleSheet.create({
         fontSize: 26,
         textAlign: 'center',
         color: '#2F4F4F',
-        padding: 10 
+        padding: 10,
+        fontWeight: '700' 
     },
     text2: {
         fontSize: 20,
         textAlign: 'center',
         color: '#2F4F4F',
-        paddingTop: 15
+        paddingTop: 15,
+        fontWeight: '700' 
     }
 });
